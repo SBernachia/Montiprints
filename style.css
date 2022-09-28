@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dde2e8;
+}
+h2 {
+    color: #f15356;
+    font-size: 35px;
+    font-weight: 600;
+ }
+
+/* HEADER */
+header {
+    text-align: center;
+}
+nav {
+    background-color: #263940;
+}
+.logo-nav{
+    margin-left: 10px;
+    width: 45px;
+}
+.nav-link {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #dde2e8;
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+.contenedor-logo {
+    background-image: url(imagenes/fondo-logo.jpg);
+}
+.logo-header {
+    margin: 150px auto 250px;
+}
+
+
+/* MAIN */
+
+/* Sobre nosotros */
+#sobre-nosotros {
+    padding: 60px 0 60px 150px;
+    background-color: #263940;
+    color: #dde2e8;
+}
+
+#sobre-nosotros h3 {
+    font-size: 25px;
+    margin-top: 25px;
+}
+#sobre-nosotros p {
+
+}
+#sobre-nosotros img {
+    float: right;
+    width: 40%;
+    margin-left: 150px;
+    
+}
+
+
+/* Video */
+#video {
+    padding: 80px;
+    text-align: center;
+}
+#video h2 {
+    margin-bottom: 60px;
+}
+
+
+/* Nuestros productos */
+#productos {
+    background-color: #f15356;
+    padding: 60px 150px;
+    text-align: center;
+}
+#productos h2{
+    color: #263940;
+}
+.contenedor-cartas{
+    margin: 40px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.cartas {
+    margin: 20px 50px;
+    padding: 15px 10px;
+    color: #dde2e8;
+    background-color: #263940;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #263940;
+}
+.cartas:hover {
+    box-shadow: 0 0 30px #dde2e8;
+}
+
+
+
+
+
+/* Colores */
+#colores {
+    padding: 80px;
+    text-align: center;
+}
+#colores h2 {
+    margin-bottom: 60px;
+}
+.carousel-indicators{
+    top: 470px
+}
+.carousel-caption h5 {
+    color: #263940;
+    font-size: 28px;
+}
+.imagen-carrusel{
+    width: 30%;
+}
+
+/* Formulario */
+#formulario {
+    padding: 60px;
+    background-color: #2f3032;
+    text-align: center;
+}
+form {
+    color:#dde2e8
+}
+label {
+    display: block;
+    margin: 40px;
+}
+
+
+/* Call action */
+#call-action {
+    background-color: #f15356;
+    padding: 60px;
+    text-align: center;
+}
+#call-action h2 {
+    color: #263940;
+}
+
+#call-action button {
+    width: 300px;
+    height: 60px;
+    margin: 80px auto 60px;
+    color:#2f3032;
+    border: 3px solid #2f3032;
+    background-color: #dde2e8;
+    border-radius: 20px;
+}
+#call-action button:hover {
+    background-color: #263940;
+    color: #dde2e8;
+}
+#call-action a {
+    margin: 0 80px;
+    color: #dde2e8;
+    font-size: 55px;
+    
+}
+#call-action a:hover {
+    color: #263940;
+}
+#call-action i {
+    margin-top: 60px;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 0 30px;
+    background-color: #263940;
+    color: #dde2e8;
+    text-align: center;
+}
