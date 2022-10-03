@@ -25,6 +25,9 @@ nav {
     font-size: 20px;
     color: #dde2e8;
 }
+.nav-link:hover {
+    color: #f15356;
+}
 .alinear-derecha {
     justify-content: flex-end;
 }
@@ -99,6 +102,7 @@ iframe {
 .cartas:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 15px 2px  #2f3032;
+    transition-duration: 0.5s;
 }
 .cartas h3 {
     margin: 10px;
@@ -134,7 +138,7 @@ iframe {
 
 /* Colores */
 #colores {
-    padding: 80px 300px;
+    padding: 80px 300px 40px;
     text-align: center;
 }
 #colores h2 {
@@ -155,20 +159,142 @@ iframe {
     width: 50%;
 }
 
-/* Formulario */
-#formulario {
-    padding: 60px;
-    background-color: #2f3032;
+.tarj-consult-stock {
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    background-color: #263940;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #2f3032;
+}
+#colores h3 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: #dde2e8;
+    font-weight: 800;
+}
+#stockColores {
+    margin: 30px auto;
+    width: 350px;
+    height: 50px;
     text-align: center;
-}
-form {
-    color:#dde2e8
-}
-label {
+    background-color: #263940;
+    border: 2px solid #dde2e8;
+    color: #dde2e8;
     display: block;
-    margin: 40px;
+}
+#stockColores:focus {
+    outline: none;
+}
+#colores .btn-consultar {
+    width: 130px;
+    height: 35px;
+    background-color: #f15356;
+    border: 2px solid #2f3032;
+    border-radius: 8px;
+    color: #263940;
+}
+#colores .btn-consultar:hover {
+    background-color: #dde2e8;
+    border: 2px solid #263940;
+    color: #263940;
+}
+#respuesta {
+    margin: 40px auto 0;
+    display: block;
+    text-align: center;
+    background-color: #263940;
+    border: none;
+    color: #f15356;
+    font-size: 26px;
+    font-weight: 800;
+    width: 500px;
+    height: 50px;
+    resize: none;
+    visibility: hidden;
+}
+#respuesta:focus {
+    outline: none;
 }
 
+/* Formulario */
+#formulario {
+    text-align: center;
+    padding: 60px;
+    background-color: #2f3032;
+}
+#formulario form {
+    color:#dde2e8
+}
+
+#formulario .form-datos {
+    margin: 0 auto;;
+    width: 500px;
+}
+#formulario label {
+    display: block;
+    margin: 40px 0 0;
+    text-align: left;
+    font-size: 20px;
+}
+#formulario input {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    background-color: #2f3032;
+    color: #dde2e8;
+    border: none;
+    border-bottom: 2px solid #f15356;
+}
+#formulario input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#formulario form p {
+    margin-top: 30px;
+    font-size: 24px;
+}
+#formulario select {
+    width: 300px;
+    height: 30px;
+    background-color: #2f3032;
+    color: #dde2e8;
+    border: 2px solid #f15356;
+    border-radius: 5px;
+}
+#formulario select:focus {
+    outline: none;
+}
+
+#formulario textarea {
+    width: 500px;
+    height: 100px;
+    background-color: #2f3032;
+    color: #dde2e8;
+    border: 2px solid #f15356;
+    border-radius: 5px;
+    resize: none;
+}
+#formulario .btn-enviar {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #f15356;
+    border: #263940;
+    color: #2f3032;
+    border-radius: 10px;
+}
+#formulario .btn-enviar:hover {
+    background-color: #dde2e8;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+#formulario .btn-enviar:active {
+    transform: scale(1);
+    transition-duration: 0ms;
+    background-color: #f15356;
+}
 
 /* Call action */
 #call-action {
@@ -221,6 +347,7 @@ th {
     color: #263940;
 }
 th,td {
+    padding: 10px 0;
     width: 350px;
 }
 td img {
