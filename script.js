@@ -69,3 +69,14 @@ function verificarStock () {
 
 var btnConsultar = document.querySelector(".btn-consultar");
 btnConsultar.onclick = verificarStock;
+
+
+window.onscroll = function () {
+    if( document.documentElement.scrollTop > 100) {
+        document.querySelector(".btn-subir-conteniner").style.opacity = "1";
+        document.querySelector(".btn-subir").style.cursor = "pointer";
+    } else {
+        document.querySelector(".btn-subir-conteniner").style.opacity = "0";
+        document.querySelector(".btn-subir").style.cursor = "default";
+    }
+}
