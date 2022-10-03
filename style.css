@@ -9,10 +9,11 @@ h2 {
     font-weight: 600;
  }
 
-/* HEADER */
+/*------HEADER------*/
 header {
     text-align: center;
 }
+/*barra de navegacion*/
 nav {
     background-color: #263940;
 }
@@ -37,7 +38,7 @@ nav {
 .logo-header {
     margin: 150px auto 250px;
 }
-
+/*boton fijo subir*/
 .btn-subir-conteniner {
     position: fixed;
     bottom:40px;
@@ -67,28 +68,25 @@ nav {
 
 
 
+/*------MAIN------*/
 
-/* MAIN */
-
-/* Sobre nosotros */
+/* Section Sobre nosotros */
 #sobre-nosotros {
+    display: flex;
     padding: 60px 0 60px 150px;
     background-color: #263940;
     color: #dde2e8;
 }
-
 #sobre-nosotros h3 {
     font-size: 25px;
     margin-top: 25px;
 }
 #sobre-nosotros img {
-    float: right;
     width: 40%;
     margin-left: 150px;
 }
 
-
-/* Video */
+/* Section Video */
 #video {
     padding: 80px;
     text-align: center;
@@ -101,8 +99,7 @@ iframe {
     height: 450px;
 }
 
-
-/* Nuestros productos */
+/* Section productos */
 #productos {
     background-color: #f15356;
     padding: 60px 150px;
@@ -162,10 +159,7 @@ iframe {
     color: #f15356;
 }
 
-
-
-
-/* Colores */
+/* Section Colores */
 #colores {
     padding: 80px 300px 40px;
     text-align: center;
@@ -173,24 +167,20 @@ iframe {
 #colores h2 {
     margin-bottom: 60px;
 }
-
-.carousel-indicators{
-    top: 500px
-}
 .carousel-item h5 {
-    margin-top: 100px;
+    margin-top: 40px;
     color: #263940;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
 }
 .imagen-carrusel{
     width: 50%;
 }
-
+/* Consultar stock colores */
 .tarj-consult-stock {
     width: 70%;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     padding: 20px 0;
     background-color: #263940;
     border-radius: 20px;
@@ -246,7 +236,7 @@ iframe {
     outline: none;
 }
 
-/* Formulario */
+/* Section Formulario */
 #formulario {
     text-align: center;
     padding: 60px;
@@ -255,7 +245,6 @@ iframe {
 #formulario form {
     color:#dde2e8
 }
-
 #formulario .form-datos {
     margin: 0 auto;;
     width: 500px;
@@ -279,7 +268,6 @@ iframe {
     outline: none;
     box-shadow: none;
 }
-
 #formulario form p {
     margin-top: 30px;
     font-size: 24px;
@@ -295,7 +283,6 @@ iframe {
 #formulario select:focus {
     outline: none;
 }
-
 #formulario textarea {
     width: 500px;
     height: 100px;
@@ -325,7 +312,7 @@ iframe {
     background-color: #f15356;
 }
 
-/* Call action */
+/* Section Call action */
 #call-action {
     background-color: #f15356;
     padding: 60px;
@@ -334,7 +321,6 @@ iframe {
 #call-action h2 {
     color: #263940;
 }
-
 #call-action button {
     width: 300px;
     height: 60px;
@@ -361,7 +347,7 @@ iframe {
     margin-top: 60px;
 }
 
-/* TABLA */
+/* Section Tabla */
 #tabla {
     text-align: center;
     padding: 80px 10%;
@@ -382,7 +368,6 @@ th,td {
 td img {
     border: 4px solid #263940
 }
-
 table p {
     margin: 0 auto;
     color: #263940;
@@ -393,45 +378,100 @@ table p {
     border-radius: 100%;
 }
 
-/* FOOTER */
+
+
+/*------FOOTER------*/
 footer {
     padding: 60px 0 30px;
     background-color: #263940;
     color: #dde2e8;
     text-align: center;
 }
+footer a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #dde2e8;
+    margin: 0 10px;
+}
+footer a:hover{
+    color: #f15356;
+}
 
 
 
 
+/* Media querys */
 
-@media (max-width: 900px) {
+/*No llegue a terminar de hacerla responsive*/
+@media (max-width: 600px) {
     
     iframe {
-        width: 160px;
-        height: 90px;
+        width: 320px;
+        height: 180px;
     }
     
     .logo-header {
-        width: 100%;
+        width: 80%;
     }
+
+    .btn-subir-conteniner {
+        bottom: 3%;
+        right: 3%;
+    }
+
     #sobre-nosotros {
+        flex-direction: column;
         padding: 40px;
         text-align: center;
     }
     #sobre-nosotros img {
         float: none;
         width: 80%;
-        margin: 0 auto;
+        margin: 40px auto 0;
     }
     #sobre-nosotros p {
         margin: 0 auto;
     }
+    
 
-
+    #productos {
+        padding: 60px 0;
+    }
+    .cartas {
+        width: 60%;
+    }
 
     #colores {
-        padding: 80px 150px;
+        padding: 80px 30px;
+    }
+    #stockColores {
+        width: 50%;
+    }
+
+    #formulario {
+        padding: 60px 30px;
+    }
+    #formulario .form-datos {
+        width: 60%;
+    }
+    #formulario input {
+        width: 40%;
+    }
+    #formulario select {
+        width: 20%;
+    }
+    #formulario textarea {
+        width: 40%;
+    }
+
+    th,td {
+        width: 20%;
+    }
+    .img-tabla{
+        width: 20%;
+    }
+    table p{
+        width: 20%;
     }
 
     footer {
