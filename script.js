@@ -1,9 +1,3 @@
-let edad = Number(prompt("Ingrese su edad con valor numerico:"));
-
-if (edad < 18) {
-    alert("Usted es menor de edad, entrara al sitio bajo su responsabilidad.");
-}
-
 let colores = [
     {
         color: "rojo",
