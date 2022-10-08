@@ -12,12 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f76534a51c.js" crossorigin="anonymous"></script>
-    <script>
-      let edad = Number(prompt("Ingrese su edad con valor numerico:"));
-      if (edad < 18) {
-          alert("Usted es menor de edad, entrara al sitio bajo su responsabilidad.");
-      }
-    </script>
 </head>
 <body>
     <header>
@@ -29,12 +23,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse alinear-derecha" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">Inicio</a>
-              <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
-              <a class="nav-link" href="#productos">Productos</a>
-              <a class="nav-link" href="#formulario">Contacto</a>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-link"><a href="#">Inicio</a></li>
+              <li class="nav-link"><a href="#sobre-nosotros">Sobre nosotros</a></li>
+              <li class="nav-link"><a href="#productos">Productos</a></li>
+              <li class="nav-link"><a href="#formulario">Contacto</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -68,7 +62,6 @@
         </div>
         <img src="imagenes/sobrenosotros-image.jpg" alt="imagen-3dprint">
         
-
       </section>
       
       <section id="video">
@@ -265,32 +258,6 @@
         <a class="icon-redes" href="https://www.instagram.com/montiprints/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a class="icon-redes" href=""><i class="fa-brands fa-facebook"></i></a>
         <a class="icon-redes" href="https://wa.me/+543364289028" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      </section>
-
-      <section id="tabla">
-        <h2>Nuestro equipo</h2>
-        <table>
-          <tr>
-            <th>Gabriel Montaldo</th>
-            <th>Sebastian Bernachia</th>
-          </tr>
-          <tr>
-            <td><img class="img-tabla" src="imagenes/Monti.jpg" alt=""></td>
-            <td><img class="img-tabla" src="imagenes/Seba.jpg" alt=""></td>       
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Fundador y CEO de MontiPrints. Es el encargado de controlar y realizar la fabricacion de nuestros productos.
-              </p>
-            </td>
-            <td>
-              <p>
-                Diseñador Web de MontiPrints. Se encarga de mantener el sitio web actualizado y funcionando.
-              </p>
-            </td>
-          </tr>
-        </table>
       </section>
       
     </main>

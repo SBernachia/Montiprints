@@ -7,7 +7,7 @@ h2 {
     color: #f15356;
     font-size: 35px;
     font-weight: 600;
- }
+}
 
 /*------HEADER------*/
 header {
@@ -17,16 +17,24 @@ header {
 nav {
     background-color: #263940;
 }
+.navbar {
+    --bs-navbar-toggler-border-color: red;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .logo-nav{
     margin-left: 10px;
     width: 45px;
 }
-.nav-link {
+.nav-link a{
     margin: 0 10px;
+    text-decoration: none;
     font-size: 20px;
     color: #dde2e8;
 }
-.nav-link:hover {
+.nav-link a:hover {
     color: #f15356;
 }
 .alinear-derecha {
@@ -73,17 +81,23 @@ nav {
 /* Section Sobre nosotros */
 #sobre-nosotros {
     display: flex;
-    padding: 60px 0 60px 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 60px 10%;
     background-color: #263940;
     color: #dde2e8;
+}
+#sobre-nosotros div {
+    width: 45%;
 }
 #sobre-nosotros h3 {
     font-size: 25px;
     margin-top: 25px;
 }
 #sobre-nosotros img {
+    height: 40%;
     width: 40%;
-    margin-left: 150px;
+    margin-left: 5%;
 }
 
 /* Section Video */
@@ -102,7 +116,7 @@ iframe {
 /* Section productos */
 #productos {
     background-color: #f15356;
-    padding: 60px 150px;
+    padding: 60px 10%;
     text-align: center;
 }
 #productos h2{
@@ -161,7 +175,7 @@ iframe {
 
 /* Section Colores */
 #colores {
-    padding: 80px 300px 40px;
+    padding: 80px 20% 40px;
     text-align: center;
 }
 #colores h2 {
@@ -347,37 +361,6 @@ iframe {
     margin-top: 60px;
 }
 
-/* Section Tabla */
-#tabla {
-    text-align: center;
-    padding: 80px 10%;
-}
-table {
-    margin: 60px auto;
-    text-align: center;
-}
-th {
-    font-size: 28px;
-    font-weight: 700;
-    color: #263940;
-}
-th,td {
-    padding: 10px 0;
-    width: 350px;
-}
-td img {
-    border: 4px solid #263940
-}
-table p {
-    margin: 0 auto;
-    color: #263940;
-    width: 260px;
-}
-.img-tabla {
-    width: 150px;
-    border-radius: 100%;
-}
-
 
 
 /*------FOOTER------*/
@@ -403,15 +386,49 @@ footer a:hover{
 /* Media querys */
 
 /*No llegue a terminar de hacerla responsive*/
-@media (max-width: 600px) {
+
+@media (max-width: 992px) {
+    .logo-header {
+        width: 80%;
+    }
     
+    #sobre-nosotros {
+        flex-direction: column;
+        padding: 10%;
+        text-align: center;
+    }
+    #sobre-nosotros div {
+        width: 100%;
+    }
+    #sobre-nosotros img {
+        width: 90%;
+        margin: 40px auto 0;
+    }
+    #sobre-nosotros p {
+        margin: 0 auto;
+    }
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    #productos {
+        padding: 60px 3%;
+    }
+
+    #colores {
+        padding: 80px 10%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #video {
+        padding: 60px 5%;
+    }
     iframe {
         width: 320px;
         height: 180px;
-    }
-    
-    .logo-header {
-        width: 80%;
     }
 
     .btn-subir-conteniner {
@@ -419,63 +436,59 @@ footer a:hover{
         right: 3%;
     }
 
-    #sobre-nosotros {
-        flex-direction: column;
-        padding: 40px;
-        text-align: center;
-    }
-    #sobre-nosotros img {
-        float: none;
-        width: 80%;
-        margin: 40px auto 0;
-    }
-    #sobre-nosotros p {
-        margin: 0 auto;
-    }
-    
-
     #productos {
-        padding: 60px 0;
+        padding: 60px 5%;
+    }
+    .contenedor-cartas {
+        margin: 0;
     }
     .cartas {
-        width: 60%;
+        margin: 60px 20px 0;
     }
-
     #colores {
-        padding: 80px 30px;
+        padding: 60px 5%;
+    }
+    .imagen-carrusel{
+        width: 70%;
+    }
+    .tarj-consult-stock {
+        width: 90%;
     }
     #stockColores {
-        width: 50%;
+        width: 80%;
     }
+    #respuesta{
+        width: 100%;
+        margin: 10px auto 0;
+    }
+
 
     #formulario {
         padding: 60px 30px;
     }
     #formulario .form-datos {
-        width: 60%;
+        width: 100%;
     }
     #formulario input {
-        width: 40%;
+        width: 80%;
     }
     #formulario select {
-        width: 20%;
+        width: 80%;
     }
     #formulario textarea {
-        width: 40%;
+        width: 80%;
     }
-
-    th,td {
-        width: 20%;
+    #call-action {
+        padding: 60px 5%;
     }
-    .img-tabla{
-        width: 20%;
+    #call-action button {
+        margin: 25px auto 60px;
     }
-    table p{
-        width: 20%;
+    #call-action .icon-redes {
+        margin: 0 8%;
+        font-size: 40px;
     }
-
-    footer {
-        background-color: #f15356;
-        
+    #call-action i {
+        margin-top: 20px;
     }
 }
